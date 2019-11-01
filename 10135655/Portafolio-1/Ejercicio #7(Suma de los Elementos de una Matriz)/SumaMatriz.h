@@ -1,0 +1,10 @@
+//
+// Created by diego on 4/10/2019.
+//
+
+#ifndef EJERCICIO__7_SUMA_DE_LOS_ELEMENTOS_DE_UNA_MATRIZ__SUMAMATRIZ_H
+#define EJERCICIO__7_SUMA_DE_LOS_ELEMENTOS_DE_UNA_MATRIZ__SUMAMATRIZ_H
+
+int sumamatriz(int x[][15],int z,int c,int k);
+
+#endif //EJERCICIO__7_SUMA_DE_LOS_ELEMENTOS_DE_UNA_MATRIZ__SUMAMATRIZ_H
