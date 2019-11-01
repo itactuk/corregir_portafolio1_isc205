@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.14)
+project(untitled C)
+
+set(CMAKE_C_STANDARD 99)
+
+include_directories(includes)
+
+add_executable(untitled EsPrimo/Main_Primos.c EsPrimo/primos.c EsPrimo/primos.h  )
+add_executable(minunit_primos "EsPrimo/minunit_ primos.c" EsPrimo/primos.c EsPrimo/primos.h)
+add_executable(main_ArgVar ArgVar/main_ArgVar.c ArgVar/ArgVar.c ArgVar/ArgVar.h)
+add_executable(minunit_ArgVar ArgVar/minunit_ArgVar.c ArgVar/ArgVar.c ArgVar/ArgVar.h)
+add_executable(Main_matriz "Tema 2/Main_matriz.c" "Tema 2/matriz.c" "Tema 2/matriz.h")
+add_executable(Minunit_matriz "Tema 2/Minunit_matriz.c" "Tema 2/matriz.c" "Tema 2/matriz.h")
+add_executable(Main_Inv "Ejercicio 4/Main_Inv.c" "Ejercicio 4/Invertir_rcsv.c" "Ejercicio 4/Invertir_rcsv.h")
+add_executable(Main_BInary "EJ 6 Busqueda Binaria/Main_BInary.c" "EJ 6 Busqueda Binaria/Binary_Search.c" "EJ 6 Busqueda Binaria/Binary_Search.h")
+add_executable(Minunit_Binary "EJ 6 Busqueda Binaria/Minunit_Binary.c" "EJ 6 Busqueda Binaria/Binary_Search.c" "EJ 6 Busqueda Binaria/Binary_Search.h")
+add_executable(Main_Estruct "Tema 3/Main_Estruct.c" "Tema 3/Estruct.c" "Tema 3/Estruct.h")
+add_executable(Minunit_Estruct "Tema 3/Minunit_Estruct.c" "Tema 3/Estruct.c" "Tema 3/Estruct.h")
+add_executable(Main_trasp "Ejercicio 8.10/Main_trasp.c" "Ejercicio 8.10/matriz_trasp.c" "Ejercicio 8.10/matriz_trasp.h")
+add_executable(Minunit_trasp "Ejercicio 8.10/Minunit_trasp.c" "Ejercicio 8.10/matriz_trasp.c" "Ejercicio 8.10/matriz_trasp.h")
