@@ -29,8 +29,7 @@ int main()
 
 
 
-void inver_cadena(const char arr[], char inv[], int pos, int cant)
-{
+void inver_cadena(const char arr[], char inv[], int pos, int cant){
     if (cant < 0)
     {
         inv[pos] = '\0';
