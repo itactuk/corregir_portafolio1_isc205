@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include "matriz_trasp.h"
 
+
 int main(){
     int m,n;
 
