@@ -6,7 +6,7 @@
 #define UNTITLED_BINARY_SEARCH_H
 
 
-int Binary_Search(int[],int,int,int);
+int Binary_Search(int[],int n,int inf,int sup);
 void Bubble_Sort(int array[], int n);
 
 
