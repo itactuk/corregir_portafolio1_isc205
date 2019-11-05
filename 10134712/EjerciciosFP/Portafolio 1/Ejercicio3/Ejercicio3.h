@@ -5,11 +5,15 @@ int esprimo(int x)
 {
     int primo=0, divs=0;
 
+    if(x == 1)
+        primo =1;
+
     for(divs=2; divs<x-1 && primo==0;divs++)
-        {
-            if(x%divs==0)
-                primo=1;
-        }
+    {
+
+        if(x%divs==0 )
+            primo=1;
+    }
 
     return primo;
 }
