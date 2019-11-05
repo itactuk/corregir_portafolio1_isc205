@@ -9,7 +9,7 @@ void leer_inv(){
 
     char c = getchar();
 
-    if(c == EOF){
+    if(c == 32){
         return;
     }
     leer_inv();

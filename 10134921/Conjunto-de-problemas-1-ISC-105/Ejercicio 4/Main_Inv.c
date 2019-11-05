@@ -3,12 +3,13 @@
 //
 
 #include <stdio.h>
-#include <stdlib.h>
+
 #include "Invertir_rcsv.h"
 
 int main(){
-    
+
+    printf("Digita letra por letra y a la ultima agrega espacio");
     leer_inv();
     
-    return;
+    return 0;
 }
