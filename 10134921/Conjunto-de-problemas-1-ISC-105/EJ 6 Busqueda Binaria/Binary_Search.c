@@ -2,7 +2,7 @@
 // Created by natasha on 19/9/19.
 //
 
-#include <stdio.h>
+
 #include "Binary_Search.h"
 int Binary_Search(int array[],int n,int inf,int sup){
 
