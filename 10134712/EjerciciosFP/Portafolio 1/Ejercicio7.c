@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /*Programar un algoritmo recursivo que permita sumar los elementos de una matriz de enteros.*/
 
@@ -7,22 +6,24 @@ int suma(int arreglo[],int num);
 
 int main()
 {
-   int cantnumeros,i,num;
+    int cantnumeros,i;
 
-   printf("Ingresa la cantidad de n%cmeros para el arreglo: ");
-   scanf("%d",&cantnumeros);
+    do {
+        printf("Ingresa la cantidad de n%cmeros para el arreglo[MAYOR A CERO]: ", 163);
+        scanf("%d", &cantnumeros);
+    }while (cantnumeros <= 0);
 
-   int arreglo[cantnumeros];
+    int arreglo[cantnumeros];
 
-   printf("Ingresa los elementos del arreglo: \n");
+    printf("Ingresa los elementos del arreglo: \n");
 
-   for(i=0;i<cantnumeros;i++){
+    for(i=0; i < cantnumeros; i++){
+
         printf("\nN%cmero %d: ",163,i+1);
         scanf("%d",&arreglo[i]);
-   }
+    }
 
-   printf("\nResultado: ");
-   suma(arreglo,num);
+    printf("\nResultado: %d",  suma(arreglo,cantnumeros - 1));
 
 }
 
