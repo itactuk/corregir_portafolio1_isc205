@@ -1,23 +1,18 @@
 #include <stdio.h>
-
-void inverter(char palabra)
+#define ESPACIO '\n'
+/*Como deberia de ser*/
+void inverter()
 {
-    palabra = getchar();
-    if (palabra == ".")
-        {
-          return;
-        }
-    else
-        {
-            inverter(palabra);
-        }
-    printf("%c", palabra);
+    char c;
+    if ((c = getchar()) != ESPACIO)
+        inverter();
+    putchar(c); //en este caso se pudo haber usado un printf
+    return ;
 }
 
 int main()
 {
-    char c;
-    printf("introduzca una palabra letra por letra cuanto termine presione punto (.)(.)   \n");
-    inverter (c);
+    printf("introduzca una palabra    \n");
+    inverter();
 }
 
