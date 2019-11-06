@@ -26,17 +26,17 @@ void imprimir(int aray[],int a)
 	}
 }
 
-void inverso(int aray[],int a) //No uso la recursividad para hacer este ejercicio y el enunciado lo plantea
+void inverso(int aray[],int a,int b) //No uso la recursividad para hacer este ejercicio y el enunciado lo plantea
 {
-	int i,n[a];
+    int aux = 0;
 
-	for (i=0;i<a;i++)
+    if(a < b)
     {
-		n[a-1-i] = aray[i];
-	}
+        aux = aray[a];
+        aray[a] = aray[b-1];
+        aray[b-1] = aux;
 
-	for (i=0;i<a;i++)
-    {
-		aray[i] = n[i];
-	}
+        inverso(aray,a + 1,b - 1);
+    }
+
 }
