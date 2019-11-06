@@ -26,7 +26,7 @@ void imprimir(int aray[],int a)
 	}
 }
 
-void inverso(int aray[],int a)
+void inverso(int aray[],int a) //No uso la recursividad para hacer este ejercicio y el enunciado lo plantea
 {
 	int i,n[a];
 
