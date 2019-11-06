@@ -16,7 +16,7 @@ int main()
     printf("entre los elementos\n");
     for(i=0;i<tay;i++)
     {
-        scanf("%d",&lista[i]);
+        scanf("%d",lista[i]); //No es necesario poner & si es un arreglo
     }
 
     printf("entre el numero a buscar\n");
@@ -49,14 +49,14 @@ void busqueda(int lista[],int a,int tay,int res)
     int mitad;
     if (a>tay)
     {
-        printf("tu numero no es en la lista\n");
+        printf("tu numero no esta en la lista\n");
         return;
     }
 
     mitad = (a+tay)/2;
     if (lista[mitad]==res)
     {
-        printf("El numero busqueda es: %d\n",res);
+        printf("El numero busqueda esta en al posicion: %d\n",mitad); //El objetivo es buscar la posicion del numero que estamos buscando
     }
     else if (lista[mitad]>res)
     {
