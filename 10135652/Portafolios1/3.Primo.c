@@ -1,39 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Hoja de excel, Sebastian Sancchez 20180032
+
 int cant;
 void esPrimo(int n);
 
 int main(){
 
-   int n=1;
-   printf("%cCuantos numeros primos desea ver desde la unidad? ",168);
-   scanf("%d",&cant);
+    int n=1;
+    printf("%cCuantos numeros primos desea ver desde la unidad? ",168);
+    scanf("%d",&cant);
+    esPrimo(cant);
 
-   if(cant==1){
-      printf("\nEL primer n%cmeros primo es:\n",163);
-   }
-
-   else{
-      printf("\nLos primeros %d n%cmeros primos son:",cant,163);
-
-   }while(cant>0){
-      esPrimo(n);
-      n++;
-    }
-
-   return 0;
+    return 0;
 }
+
 
 void esPrimo(int n){
-   int cant_div=0;
-   for(int i=1;i<=n;i++){
-      if(n%i==0){
-         cant_div++;
-      }
-   }
-   if(cant_div==2){
-      printf(" %d",n);
-      cant--;
-   }
+    int n1 = 1;
+    int cont, i, primo;
+    for ( i = n1 ; i <= n ; i++ )
+    {
+        primo = 1;
+        cont = 2;
+
+        while ( cont <= i / 2 && primo )
+        {
+            if ( i % cont == 0 )
+                primo = 0;
+            cont++;
+        }
+        if ( primo  )
+            printf( "%d  ", i );
+    }
+    return ;
 }
+
