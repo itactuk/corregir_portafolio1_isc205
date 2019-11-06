@@ -1,35 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sum(int [],int,int);
+int sum(int [][5],int,int,int);
 
 
 int main()
 {
-    int aray[100],a,i,sumaray;
+    int aray[][5] = {{1,2,3,4,5},
+                     {5,4,1,2,6},
+                     {9,7,3,2,9},
+                     {6,9,3,1,5},
+                     {7,8,9,2,6}};
+    int a,b,i,j,sumaray;
+    a = 5;
+    b = 5;
 
-    printf("digame el tamano del arreglo:\n");
-    scanf("%d",&a);
-    printf("entre los elementos del arreglo:\n");
-
-    for(i=0;i<a;i++)
-    {
-        scanf("%d",&aray[i]);
-    }
-
-    sumaray = sum(aray,0,a);
+    sumaray = sum(aray,a,b,b);
     printf("La suma de los elementos es: %d",sumaray);
 
     return 0;
 }
 
 
-int sum(int aray[],int i,int a)
+int sum(int aray[][5],int a,int b,int k) //No estaba hecha para sumar matricez sino vectores
 {
-    if(i>=a)
+    if(a == 0)
     {
         return 0;
     }
-
-    return (aray[i]+sum(aray,i+1,a));
+    if(b == 1)
+    {
+        return aray[a-1][b-1] + sum(aray,a-1,k,k);
+    }
+    if(b > 1)
+    {
+        return aray[a-1][b-1] + sum(aray,a,b-1,k);
+    }
 }
