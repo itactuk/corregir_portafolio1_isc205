@@ -17,27 +17,22 @@ int valorusuario() {
     return valor;
 }
 
-void listaprimo(int valor) {
-     int  valorprimos;
+void listaprimo( int n2) {
+     int n1 = 1;
+     int cont, i, primo;
+     for ( i = n1 ; i <= n2 ; i++ )
+     {
+         primo = 1;
+         cont = 2;
 
-     printf("Los numeros primos son: ");
-
-     for (int i = 2; i <= valor; i++) {
-         valorprimos = 1;
-
-         for (int j = 2; j <= i / 2; j++) {
-
-
-             if (i % j == 0) {
-                valorprimos = 0;
-                break;
-             }
+         while ( cont <= i / 2 && primo )
+         {
+             if ( i % cont == 0 )
+                 primo = 0;
+             cont++;
          }
-
-
-         if (valorprimos == 1)
-            printf("%d, ", i);
+        if ( primo  )
+            printf( "%d  ", i );
      }
-     printf("\n");
+     return ;
  }
-

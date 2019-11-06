@@ -1,19 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
+//No es la manera de buscar binaria y recursivamente un elemento
 
-int bbin (int arr[],int ii, int iif, int x)
+//esta deberia de ser la funcion
+/*int busquedaBinariaRecursiva(int arreglo[], int busqueda, int izquierda, int derecha){
+    if (izquierda > derecha)
+        return -1;
 
-{
-    if (ii>iif) return -1;
-    if (ii<0) return -1;
-    int im = (iif-ii)/2+ii;
-    if (x == arr[im]) return im;
-    if(x>arr[im]){
-        return bbin(arr,im+1,iif,x);
+    int indiceDeLaMitad = floor((izquierda + derecha) / 2);
+
+    int valorQueEstaEnElMedio = arreglo[indiceDeLaMitad];
+    if (busqueda == valorQueEstaEnElMedio){
+        return indiceDeLaMitad;
     }
-    return bbin(arr,ii,im-1,x);
-}
 
+    if (busqueda < valorQueEstaEnElMedio){
+
+        derecha = indiceDeLaMitad - 1;
+    }else{
+
+        izquierda = indiceDeLaMitad + 1;
+    }
+    return busquedaBinariaRecursiva(arreglo, busqueda, izquierda, derecha);
+}*/
 
 int main()
 {

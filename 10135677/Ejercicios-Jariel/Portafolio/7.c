@@ -13,9 +13,7 @@ int main(void){
 int sumar_matriz(int f, int c,int k, int matriz[f][c], int suma){
 
     if(f < 0)
-    {
         return suma;
-    }
     if(f >= 0)
     {
         if(c>=0)
@@ -24,9 +22,8 @@ int sumar_matriz(int f, int c,int k, int matriz[f][c], int suma){
             sumar_matriz(f,c-1,k,matriz,suma);
         }
         if(c < 0)
-        {
             sumar_matriz(f-1,c=k,k,matriz,suma);
-        }
+
 
     }
 }
