@@ -1,5 +1,6 @@
 #include <stdio.h>//bien, aunque solo hizo un main, -5 a falta de .c y .h
 
+
 void EsPrimo(int numero)
 {
     int contador, i = 3, x;
