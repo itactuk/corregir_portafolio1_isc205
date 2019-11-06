@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void imprimir(int [],int);
-void inverso(int [],int);
+void inverso(int [],int,int);
 
 int main()
 {
@@ -11,7 +11,7 @@ int main()
 
     imprimir(aray,a);
     printf("\n");
-	inverso(aray,a);
+	inverso(aray,0,a);
 	imprimir(aray,a);
 
 	return 0;
