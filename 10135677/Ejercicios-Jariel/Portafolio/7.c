@@ -13,7 +13,7 @@ int main(void){
 int sumar_matriz(int f, int c,int k, int matriz[f][c], int suma){
 
     if(f < 0)
-        return suma; //Algunas llaves de mas pero el codigo muy bien 98/100
+        return suma; //Algunas llaves de mas pero el codigo muy bien 98/100 Sebastian Sanchez 2018-0032
     if(f >= 0)
     {
         if(c>=0)

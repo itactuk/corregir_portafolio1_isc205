@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//Hacia todo bien pero empezaba desde el 2 como numero primo cuando el 1 lo es tambien 85/100 Sebastian Sanchez 2018-0032
 int valorusuario();
 void listaprimo(int valor);
 
@@ -12,7 +13,7 @@ int main() {
 
 int valorusuario() {
     int valor;
-    printf("Hasta que numero quieres los numeros primos?: ");
+    printf("Hasta que numero quieres los numeros primos?: "); //deberia preguntar mas o menos asi
     scanf("%d", &valor);
     return valor;
 }

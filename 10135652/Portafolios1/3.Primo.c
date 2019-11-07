@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Inicialmente deberia indicar los numeros primos desde a hasta b ( lo que indique el usuario) y aqui no lo indicaba.
-// Tiene poco coherencia con la logica del usuario. No eficiente
+// Tiene poco coherencia con la logica del usuario. EL codigo no eficiente 75/100
 
 int cant;
 void esPrimo(int n);

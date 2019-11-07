@@ -16,3 +16,4 @@ int main(){
 }
 
 //El codigo no esta mal pero se pudo haber hecho un poquito mas efectivo
+// al hacerlo sin que haya que darle espacio para invertir la cadena de caracteres 95/100

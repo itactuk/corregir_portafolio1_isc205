@@ -1,12 +1,12 @@
 #include <stdio.h>
 #define ESPACIO '\n'
-/*Como deberia de ser*/
+//El programa no corria encima de que el codigo no era para nada efectivo 50/100.Sebastian Sanchez
 void inverter()
 {
     char c;
     if ((c = getchar()) != ESPACIO)
         inverter();
-    putchar(c); //en este caso se pudo haber usado un printf
+    putchar(c);
     return ;
 }
 

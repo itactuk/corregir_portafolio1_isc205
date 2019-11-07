@@ -4,8 +4,8 @@
 
 #include "punto3.h"
 
-int imprimir_primos(int n1, int n2){           //El codigo funcionaba pero el ejercicio pedia los numeros primos dentro de un rango de numeros por ello hay que penalizarlo 85/100
-
+int imprimir_primos(int n){
+     int n1 = 1;           //Hacia todo bien pero empezaba desde el 2 como numero primo cuando el 1 lo es tambien 85/100. Sebastian Sanchez 2018-0032
     int cont, i, primo;
     for ( i = n1 ; i <= n2 ; i++ )
     {
