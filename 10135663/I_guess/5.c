@@ -1,8 +1,9 @@
-#include <stdio.h>
+#include <stdio.h>//Bien
+
 void Arreglo_Inverso(int arreglo[], int i, int size)
 {
     int nsize;
-    if(i<size || i==(size-1))
+    if(i < size || i== (size-1))
     {
         nsize=arreglo[size];
         arreglo[size]=arreglo[i];
@@ -17,7 +18,7 @@ void Arreglo_Inverso(int arreglo[], int i, int size)
 
 void Imprimir(int x[],int size)
 {
-    for(int i=0;i<size;i++)
+    for(int i=0; i < size; i++)
     {
         printf("%d ",x[i]);
     }
