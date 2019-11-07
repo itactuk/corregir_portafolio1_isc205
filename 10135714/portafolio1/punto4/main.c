@@ -1,6 +1,6 @@
 #include "punto4.h"
 
 int main() {
-    printf("Escriba una frase y luego presione espacio y enter: \n");
+    printf("Escriba una frase y luego presione espacio y enter: \n"); //No deberia de darle espacio para que el programa funcione
     inv();
 }

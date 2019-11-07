@@ -15,5 +15,6 @@ void inv()
 
 
    putchar(palabra_a_invertir);
+    return;
 
 }

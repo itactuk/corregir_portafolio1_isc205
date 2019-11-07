@@ -3,8 +3,9 @@
 
 int main()
 {
-    int cantidad;
-    printf("%cCu%cntos n%cmeros primos desea imprimir?  ",168,160,163);
-    scanf("%d",&cantidad);
-    imprimir_primos(cantidad);
+    int cantidad,cantidad2;
+    printf("De que numero a que numero desea ver los numeros primos?  ",);
+    scanf("%d %d",&cantidad,&cantidad2);
+    imprimir_primos(cantidad,cantidad2);
 }
+
