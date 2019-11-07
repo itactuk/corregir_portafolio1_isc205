@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//-50, el punto era hacer 2 problemas, solo hay uno, vale la mitad.
 
 void EsPrimo(int numero)
 {
@@ -26,7 +26,9 @@ void EsPrimo(int numero)
 int main()
 {
     int cantidad = 80;
+
     EsPrimo(cantidad);
+
     return 0;
 }
 
