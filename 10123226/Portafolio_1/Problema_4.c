@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> //-5 LIB SIN USO
 
 //prototipo de la funcion
 void texto_invertido();
 //variables globales
-int i;
+int i;// -5 variable sin uso
 
 int main()
 {
@@ -19,14 +19,14 @@ int main()
 void texto_invertido()
 {
     char texto = getchar();
-        if(texto=='\n')
-        {
-            return;
-        }
-        else
-        {
-            texto_invertido();
-            putchar(texto);
-        }
+    if(texto=='\n')
+    {
+        return;
+    }
+    else
+    {
+        texto_invertido();
+        putchar(texto);
+    }
 
 }
