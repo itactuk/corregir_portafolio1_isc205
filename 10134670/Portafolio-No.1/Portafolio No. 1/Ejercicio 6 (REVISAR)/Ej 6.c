@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-//No es la manera de buscar binaria y recursivamente un elemento
+//No es la manera de buscar binaria y recursivamente un elemento.
+// Faltaron unas cosas a la funcion encima de que no hace una busqueda binaria correctamente 75/100
 
 //esta deberia de ser la funcion
 /*int busquedaBinariaRecursiva(int arreglo[], int busqueda, int izquierda, int derecha){
