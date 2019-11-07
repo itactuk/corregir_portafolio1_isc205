@@ -1,29 +1,34 @@
 #include <stdio.h>
-#include <stdlib.h>
-
+#include <stdlib.h>//-5
+// PARECE SER UNO DE JOYANES, ESPECIFICA CUAL
 //variables globales
-int i;
+//int i;-5
 
 int main()
 {
-    int cantidad,detector = 0;
-        printf("Cuantos numeros desea almacenar: "); scanf("%d",&cantidad);
+    int cantidad,detector = 0,i;//-5 ESTETICA, SCANF AL LADO DE PRINTF
+    // MUY JUNTO
+    printf("Cuantos numeros desea almacenar: ");
+    scanf("%d",&cantidad);
+
     int numeros[cantidad];
-        printf("Ingrese los numeros a continuacion...");
-        printf("\n\n");
-            for(i=0;i<cantidad;i++)
-            {
-                printf("Ingrese el valor numero %d: ",i+1);
-                scanf("%d",&numeros[i]);
-            }
-            for(i=0;i<1;i++)
-            {
-                detector = numeros[i+1];
 
-            }
+    printf("Ingrese los numeros a continuacion...");
+    printf("\n\n");
 
-        printf("\n");
-        printf("El segundo valor de numeros que usted digito es: %d\n\n",detector);
+    for(i=0;i < cantidad;i++)
+    {
+        printf("Ingrese el valor numero %d: ",i+1);
+        scanf("%d",&numeros[i]);
+    }
+    for(i=0;i < 1;i++)
+    {
+        detector = numeros[i+1];
+
+    }
+
+    printf("\n");
+    printf("El segundo valor de numeros que usted digito es: %d\n\n",detector);
 
     return 0;
 }
