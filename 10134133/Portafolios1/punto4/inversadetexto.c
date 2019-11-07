@@ -3,7 +3,8 @@
 //
 
 #include <stdio.h>
-#define ESPACIO '\n'
+#define ESPACIO '\n'//bien
+
 void inverso(void);
 int main() {
     printf("------------------------\n");

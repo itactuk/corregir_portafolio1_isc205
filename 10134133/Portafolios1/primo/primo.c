@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>//-5 no necesaria
 #include "primo.h"
 
 void esprimo(int n1, int n2);

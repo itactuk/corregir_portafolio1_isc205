@@ -6,11 +6,12 @@
 #include <math.h> // Para floor
 
 int busquedaBinariaRecursiva(int arreglo[], int busqueda, int izquierda, int derecha); //funcion de la busqueda binaria recursivamente
-int busquedaBinariaConWhile(int arreglo[], int busqueda, int tamanioDelArreglo);
+//int busquedaBinariaConWhile(int arreglo[], int busqueda, int tamanioDelArreglo); -5 funcion que no existe
 
 int main(){
+
     int numeros[] = {1, 2, 3, 4, 5, 6, 7, 8,9, 10};
-    int busqueda = 4;
+    int busqueda = 1;
     int longitudDelArreglo = sizeof(numeros) / sizeof(numeros[0]);
     int resultadoBusquedaRecursiva = busquedaBinariaRecursiva(numeros, busqueda, 0, longitudDelArreglo - 1);
     printf("Busqueda Binaria Recursiva!\n");
@@ -24,12 +25,12 @@ int busquedaBinariaRecursiva(int arreglo[], int busqueda, int izquierda, int der
 
     int indiceDeLaMitad = floor((izquierda + derecha) / 2);
 
-    int valorQueEstaEnElMedio = arreglo[indiceDeLaMitad];
-    if (busqueda == valorQueEstaEnElMedio){
+    // int valorQueEstaEnElMedio = arreglo[indiceDeLaMitad]; -5, variable no necesaria
+    if (busqueda == arreglo[indiceDeLaMitad]){
         return indiceDeLaMitad;
     }
 
-    if (busqueda < valorQueEstaEnElMedio){
+    if (busqueda < arreglo[indiceDeLaMitad]){
 
         derecha = indiceDeLaMitad - 1;
     }else{

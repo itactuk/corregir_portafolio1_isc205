@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
+#include<conio.h>// -5 lib sin uso
 #include<string.h>
 
 enum {a,e,x,o,u};
@@ -23,7 +23,7 @@ int main()
     printf("-----------------------------\n");
     printf("A: ");
 
-    for ( int j = 1; j <= vocales[a]; j++ ) {
+    for ( int j = 1; j <= vocales[a]; j++ ) {//tambien habrias podido usar un for para las vocales en vez de 5
         printf( "%c ", '*' );
     }
     printf("[%d]",vocales[a]);
@@ -67,13 +67,17 @@ void contar(char texto[100], int vocales[5])
                 vocales[a]++;
                 break;
             case 'e': case 'E':
-                vocales[e]++; break;
+                vocales[e]++;
+                break;
             case 'i': case 'I':
-                vocales[x]++; break;
+                vocales[x]++;
+                break;
             case 'o': case 'O':
-                vocales[o]++; break;
+                vocales[o]++;
+                break;
             case 'u': case 'U':
-                vocales[u]++; break;
+                vocales[u]++;
+                break;
         }
     }
 }

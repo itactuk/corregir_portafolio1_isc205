@@ -8,8 +8,9 @@ int suma(int mat[][3],int i, int j,int k);
 
 int main () {
 
-    int matriz[3][3]={1,2,3,4,5,6};
-
+    int matriz[3][3]={{2,1,0},// pasale una 3x3 para que se vea mejor todos los valores de la matrriz
+                      {2,1,1},
+                      {2,1,1}};
     printf("%d",suma(matriz,3,3,3));
 
     return 0;

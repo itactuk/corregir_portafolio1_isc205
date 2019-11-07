@@ -8,8 +8,8 @@ void bubblesort(int arreglo[],int n);
 
 int main () {
 struct timeval  tv1, tv2;
-gettimeofday(&tv1, NULL);
-int x[] = {14,52,34,67,844,34};
+gettimeofday(&tv1, NULL);//esto da una advertencia, gettimeofday esta obsoleto y no se recomienda en nuevo codigo -5
+int x[] = {14,52,34,67,844,34};//revisa el link para explicacion https://stackoverflow.com/questions/5248915/execution-time-of-c-program/41959179#41959179
 int n,i;
 n = 5;
 
@@ -33,8 +33,8 @@ void bubblesort(int arreglo[],int n) {
     {
         for (int j = 0 ; j < n - i - 1; j++)
         {
-            if (arreglo[j] > arreglo[j+1]) /* For decreasing order use < */
-            {
+            if (arreglo[j] > arreglo[j+1]) /* For decreasing order use < *///-20, al menos borra el comentario del creador original._.
+            {                               //https://www.freecodecamp.org/forum/t/sorting-algorithms/297483 original
                 swap       = arreglo[j];
                 arreglo[j]   = arreglo[j+1];
                 arreglo[j+1] = swap;
