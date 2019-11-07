@@ -4,26 +4,22 @@
 
 #include "punto3.h"
 
-int imprimir_primos(int ctd){
+int imprimir_primos(int n1, int n2){
 
-    int num = ctd-1,i,j ;
-
-    printf("2  "); //El dos va por default, ya que es el unico numero primo/par.
-    //No se imprimira el uno, ya que este no es considerado un numero primo
-    for (i = 2; i <=ctd; )
+    int cont, i, primo;
+    for ( i = n1 ; i <= n2 ; i++ )
     {
-        for ( j = 2 ; j <= num  ; j++ )
+        primo = 1;
+        cont = 2;
+
+        while ( cont <= i / 2 && primo )
         {
-            if ( num%j == 0 )//Buscamos el residuo de ir dividiendo entre el evaluador hasta encontrar un numero que divida al otro ademas de 1 y  el mismo
-            {
-                break;
-            }
+            if ( i % cont == 0 )
+                primo = 0;
+            cont++;
         }
-        if (j==num)
-        {
-        printf("%d  ", num);
-        i++;
-        }
-        num++;
+        if ( primo )
+            printf( "%d ", i );
     }
+    return ;
 }
