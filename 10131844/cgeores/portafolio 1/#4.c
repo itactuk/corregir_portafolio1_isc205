@@ -19,6 +19,7 @@ void reverse ()
 	else
     {
 		reverse();
-		return putchar(a);
+		//return putchar(a); /*Rosleiry: (-5) aqui retornas una variable con valor en una función void. Con poner putchar(a) sin el return es suficiente
+		putchar(a);
 	}
 }
