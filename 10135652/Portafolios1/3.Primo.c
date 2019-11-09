@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Hoja de excel, Sebastian Sancchez 20180032
+// Tiene poco coherencia con la logica del usuario. EL codigo no eficiente 75/100
 
 int cant;
 void esPrimo(int n);
@@ -9,7 +9,7 @@ void esPrimo(int n);
 int main(){
 
     int n=1;
-    printf("%cCuantos numeros primos desea ver desde la unidad? ",168);
+    printf("De 1 a que numero quisiera ver numeros primos"); //deberia preguntarse de esta manera o relacionado
     scanf("%d",&cant);
     esPrimo(cant);
 

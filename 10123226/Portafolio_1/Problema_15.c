@@ -53,13 +53,22 @@ int main()
              switch(menu)
              {
                  case 1: fflush(stdin); //limpiador de memoria temporal
-
+           
             printf("Ingrese el nombre del primer estudiante: "); gets(nombre);
             strcpy(nombre,primer_estudiante.nombre);
             printf("Ingrese su matricula: "); scanf("%d",&primer_estudiante.matricula);
             printf("Ingrese su edad: "); scanf("%d",&primer_estudiante.edad);
             printf("Cuantas materias tiene este estudiante: "); scanf("%d",&primer_estudiante.cantidad_materia);
-            printf("Digite el nombre de las materias: ");
+            
+            /*Rosleiry: (-30) Cada vez que llega a este punto de pedir nombre de las materias el programa se para, 
+            por lo tanto nunca se ingresan estudiantes y no se puede verificar ninguna otra opcion del menu 
+            porque no hay estudiantes guardados. Para solucionar esto son muchos detalles, por ejemplo, para ingresar los nombres
+            de las materias no deberias comparar con la constante MATERIA sino con .cantidad_materia (Esto para cada uno de los 3 estudiantes).
+            No hay ningun tipo de validaciones, por ejemplo la cantidad de digitos de a matricula, o que se repitan, edad/matricula/cantidad de materias negativas, etc.
+            Cuando en el ciclo: for(i=0;i<MATERIA;i++) lo reemplazé por .cantidad_materia en cada estudiante, funcionaba y cuando ya te deja salir al menu y das a otra
+            opcion te pide el nombre del estudiante y si quieres ir a menu. (No funciona correctamente)*/
+             
+            printf("Digite el nombre de las materias: "); 
                 for(i=0;i<MATERIA;i++)
                 {
                     scanf("%c",&primer_estudiante.materia_curso[i]);

@@ -58,7 +58,7 @@ void busqueda_binaria(int list[], int pequeno, int grande, int key)
     mitad = (pequeno + grande) / 2;
     if (list[mitad] == key)
     {
-        printf("numero encontrada %d \n",key);
+        printf("numero encontrada %d en el %cndice %d del arreglo ordendado de forma creciente\n",key,161,mitad); //Rosleiry: (-2) Perfecto, pero no devuelve el índice en el que fue encontrado el número
        // printf("El numero entrada es: %d\n",key);
     }
 
