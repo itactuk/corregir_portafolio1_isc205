@@ -2,6 +2,8 @@
 // Created by sebastian on 10/3/2019.
 //
 
+//SOLO LO DIFERENCIA UNA LINEA DEL CODIGO DEL 10135714
+
 #ifndef UNTITLED2_PRIMO_H//-10 bucle innecesario
 #define UNTITLED2_PRIMO_H//-10, el mandato no pide rangos, pide cant de primos
 #endif //UNTITLED2_PRIMO_H //-5 por crear funcion en .h

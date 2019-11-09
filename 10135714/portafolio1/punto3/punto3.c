@@ -3,7 +3,7 @@
 //
 
 #include "punto3.h"
-
+//ESTA IGUAL QUE EL TUYO SEBASTIAN, LO CORREGISTE Y NO LO NOTASTE, 10134133 Y EL 10135714
 int imprimir_primos(int n){
                 //Hacia todo bien pero empezaba desde el 2 como numero primo cuando el 1 lo es tambien 85/100. Sebastian Sanchez 2018-0032
     int cont, i, primo;   //No, Sebas se equivoca, el 1 no es primo -5, n1 no es necesaria, di que i =1 -nicol
