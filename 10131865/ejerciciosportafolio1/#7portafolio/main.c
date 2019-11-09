@@ -12,10 +12,7 @@ int main()
 
 
 
-    printf("Digite el tamano del arreglo: ");    /*El codigo muy bien y todo pero el ejercicio
- *                                                   pedia sumar los elementos de una MATRIZ, NO de un ARREGLO
- *                                                   (osea no lineal porque las matrices son arreglos pero BIDIMENSIONALES
- *                                                   LA CUAL ESTE NO ES ) */
+    printf("Digite el tamano del arreglo: ");
     scanf("%d", &N);
     printf("Digite los elementos del arreglo: ");
     for(i=0; i<N; i++)

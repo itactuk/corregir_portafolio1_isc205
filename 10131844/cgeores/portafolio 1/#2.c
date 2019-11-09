@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-void maximo(int n,...);
+void maximo(int n,...);//Tienes el mismo punto que el de 10123226, mira las correciones que le hice.   PROFE ME LOS GANE :D
 int main()
 {
     printf("busqueda del maximo\n");
