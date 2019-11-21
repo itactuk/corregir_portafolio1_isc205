@@ -1,0 +1,32 @@
+| Ejercicio | Nombre | Codigo (70%) | Test (30%) |
+| --------- | ------ | ------------ | ---------- |
+| P1  | PRACT0 | 70 | 30 |
+| P2  | ARGS-VAR   | 70 | 30 |
+| P3  | PRIMO      | 70 | 30 |
+| P4  | INVERSO-TXT| 70 | 30 |
+| P5  | INVERSO-INT| 70 | 30 |
+| P6  | BUSQ-BIN   | 70 | 30 |
+| P7  | SUM-RECU   | 70 | 30 |
+| P8  | INV-MAT    | 70 | 30 |
+| P9.a| BUBLESORT | 70 | 30 |
+| P9.b| SELECTSORT | 70 | 30 |
+| P9.c| INSERTSORT | 70 | 30 |
+| P9.d| MERGESORT | 70 | 30 |
+| P9.e| QUICKSORT | 70 | 30 |
+| P10 | PASOS  | 70 | 30 |
+| P11.a| BMINA-MINA | 70 | 30 |
+| P11.b| BMINA-NUM | 70 | 30 |
+| P11.c| BMINA-CLIC | 70 | 30 |
+| P12 | BMINA-UNID-ARR | 70 | 30 |
+| P13.a | LIBRO1 | 70 | 30 |
+| P13.b | LIBRO2 | 70 | 30 |
+| P15.a | EST-INGR | 70 | 30 |
+| P15.b | EST-PROM-EST | 50 | 30 |
+| P15.c | EST-PROM-ALL | 0 | 30 |
+| P15.d | EST-FAL-EV | 0 | 0 |
+| P15.e | EST-BUSQ-MAT | 0 | 0 |
+| P15.f | EST-BUSQ-NOM | 0 | 0 |
+| P15.g | EST-ORD-NOM-MAT | 70 | 30 |
+| P15.h | EST-IMP-EST-CAL | 0 |  |
+| P15.i | EST-IMP-NOM-HIGH-CAL | 0 | 0 |
+| P16 | BMINA-STRUCT | 70 | 30 |
